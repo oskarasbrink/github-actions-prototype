@@ -1,4 +1,4 @@
-FROM: lamastex/dockerdev:spark3x
+FROM lamastex/dockerdev:spark3x
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
