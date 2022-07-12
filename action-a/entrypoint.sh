@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-sh -c "ls"
+sh -c "echo tjo man"
