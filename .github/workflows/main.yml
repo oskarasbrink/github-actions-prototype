@@ -2,8 +2,10 @@ name: A workflow for my file
 on: push
 jobs:
   build:
-    name: docker ls action
     runs-on: ubuntu-latest
+    container:
+      image: lamastex/dockerdev:spark3x
+      options: --user root
     steps:
       - uses: actions/checkout@v1
       - uses: ./action-a
