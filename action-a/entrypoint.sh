@@ -2,8 +2,8 @@
 
 ls /root/tilowiklund
 
-cd /root/tilowiklund
-stack setup
+cd /root/tilowiklund/pinot
+TAR_OPTIONS=--no-same-owner stack setup
 mkdir -p src/book
 mdbook init .
 mkdir src/contents
