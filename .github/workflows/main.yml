@@ -1,18 +1,9 @@
 name: A workflow for my file
-on: push
-jobs:
-  first-job:
-    runs-on: ubuntu-latest
-    steps: 
-      - name: check out the repo
-        uses: actions/checkout@v2
-      - name: run the build process with Docker
-        uses: addnab/docker-run-action@v3
-        with:
-            image: lamastex/dockerdev:spark3x
-            options: -v ${{ github.workspace }}:/var/www
-            run: |
-                ls
-                pwd
-                echo "asd mannen"
-      
+ on: push
+ jobs:
+   build:
+     name: docker ls action
+     runs-on: ubuntu-latest
+     steps:
+       - uses: actions/checkout@v1
+       - uses: ./action-a
