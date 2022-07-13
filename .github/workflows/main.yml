@@ -1,15 +1,17 @@
 name: A workflow for my file
 on: push
 jobs:
-  build:
-    name: docker
+  first-job:
     runs-on: ubuntu-latest
-    container: 
-      image: lamastex/dockerdev:spark3x
-      volumes: 
-        - /github/workspace
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ./action-a
-      - run: ls
+    steps: 
+      - name: check out the repo
+        uses: actions/checkout@v2
+      - name: run the build process with Docker
+        uses: addnab/docker-run-action@v3
+        with:
+            image: lamastex/dockerdev:spark3x
+            options: -v ${{ github.workspace }}:/var/www
+            run: |
+                ls
+                pwd
       
