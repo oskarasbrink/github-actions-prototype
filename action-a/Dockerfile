@@ -1,8 +1,10 @@
 FROM lamastex/haskell-pinot
 
 ADD entrypoint.sh /entrypoint.sh
+ENV PORT 80
+WORKDIR /home/runner/work/github-actions-prototype/github-actions-prototype
 RUN pwd
-COPY /home/runner/work/github-actions-prototype/github-actions-prototype/./action-a/Dockerfile /root/GIT
+COPY . /root/GIT
 RUN ls -l
 RUN ls /root/GIT
 RUN stack exec pinot -- --from databricks --to jupyter-book ASSIGNMENT-1.dbc -o src/contents
