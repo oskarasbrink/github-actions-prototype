@@ -15,6 +15,6 @@ cd src
 find contents -iname '*.md' -type f | sort -h | while read f; do echo "- ["$(basename $f .md)"](./$f)"; done > SUMMARY.md
 cd ..
 mdbook build
-
+ls -l
 
 
