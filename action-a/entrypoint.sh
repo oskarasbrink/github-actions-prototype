@@ -3,7 +3,8 @@
 ls /root/tilowiklund
 
 cd /root/tilowiklund
-mkdir book
+stack setup
+mkdir -p src/book
 mdbook init .
 mkdir src/contents
 
