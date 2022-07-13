@@ -1,4 +1,4 @@
-FROM lamastex/dockerdev:spark3x
+FROM lamastex/haskell-pinot
 
 ADD entrypoint.sh /entrypoint.sh
 RUN cd ..
