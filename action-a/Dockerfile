@@ -1,6 +1,7 @@
 FROM lamastex/dockerdev:spark3x
 
 ADD entrypoint.sh /entrypoint.sh
+COPY . /root/GIT
 RUN ls -l
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
