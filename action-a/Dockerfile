@@ -7,7 +7,8 @@ RUN pwd
 COPY . /root/GIT
 RUN ls -l
 RUN ls /root/GIT
-RUN stack exec pinot -- --from databricks --to jupyter-book ASSIGNMENT-1.dbc -o src/contents
+RUN stack setup
+RUN stack exec pinot -- --from databricks --to mdbook ASSIGNMENT-1.dbc -o src/contents
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
