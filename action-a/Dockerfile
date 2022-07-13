@@ -4,6 +4,8 @@ ADD entrypoint.sh /entrypoint.sh
 ENV PORT 80
 WORKDIR /home/runner/work/github-actions-prototype
 RUN pwd
+RUN cd ..
+RUN pwd
 COPY . /root/GIT
 RUN ls -l
 RUN ls /root/GIT
