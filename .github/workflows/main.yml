@@ -4,9 +4,10 @@ jobs:
   build:
     name: docker
     runs-on: ubuntu-latest
-    container:
-       image: lamastex/dockerdev:spark3x
-       options: --user root
+    container: 
+      image: lamastex/dockerdev:spark3x
+      volumes: 
+        - /github/workspace
     steps:
       - uses: actions/checkout@v1
       - uses: ./action-a
