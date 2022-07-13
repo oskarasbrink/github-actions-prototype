@@ -2,8 +2,8 @@
 
 docker build -t lamastex/dockerdev:latest .
 
-docker run --rm -d -it --name=spark-gdelt --mount type=bind,source=${HOME},destination=/root/GIT lamastex/dockerdev:latest
+docker run --workdir= /opt/workspace -v /home/runner/work/github-actions-prototype/github-actions-prototype:/root/GIT --entrypoint bin/ls lamastex/dockerdev:latest
 
-ls
+ls root/GIT
 pwd
 echo "tjenare mannen"
