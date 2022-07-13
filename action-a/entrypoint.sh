@@ -3,6 +3,7 @@
 ls /root/tilowiklund
 
 cd /root/tilowiklund/pinot
+chown -R $(id -un):$(id -gn) ~
 TAR_OPTIONS=--no-same-owner stack setup
 mkdir -p src/book
 mdbook init .
