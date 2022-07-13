@@ -10,6 +10,7 @@ mdbook init .
 mkdir src/contents
 
 pwd
+ls
 stack exec pinot -- --from databricks --to mdbook  ~/ASSIGNMENT-1.dbc -o src/contents
 
 
