@@ -3,16 +3,19 @@
 #ls /root/tilowiklund
 
 cd /root/tilowiklund/pinot
-#chown -R $(id -un):$(id -gn) ~
-TAR_OPTIONS=--no-same-owner stack setup
+chown -R $(id -un):$(id -gn) ~
+#TAR_OPTIONS=--no-same-owner stack setup
 #stack build
 mkdir -p src/book
 #mdbook init .
 mkdir src/contents
 
 echo "~"
-ls ~/
+cd
+echo "punktmannen"
+ls -l
 echo "exec pinot"
+cd /root/tilowiklund/pinot
 stack exec pinot -- --from databricks --to mdbook  ~/ASSIGNMENT-1.dbc -o src/contents
 echo "."
 ls
