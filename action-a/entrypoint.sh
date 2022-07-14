@@ -6,7 +6,7 @@ echo $HOME
 echo "user"
 echo $USER
 echo "home change"
-sudo sh -c "echo HOME=/root >> $GITHUB_ENV"
+sh -c "echo HOME=/root >> $GITHUB_ENV"
 #usermod -d /root root
 #echo $HOME
 cd /root/tilowiklund/pinot
