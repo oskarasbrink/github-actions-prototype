@@ -18,7 +18,8 @@ chown -R $(id -un):$(id -gn) ~
 ls
 
 pwd
-
+echo "whereis mannen"
+whereis pinot
 cd /root/tilowiklund/pinot
 ls -l
 #cd /root/tilowiklund/pinot
