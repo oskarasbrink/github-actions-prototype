@@ -12,7 +12,8 @@ jobs:
       - uses: actions/checkout@v1
       - run: echo "HOME=/root" >> $GITHUB_ENV
       - uses: ./action-a
-      - run: echo "HOME=/root" >> $GITHUB_ENV
+      - uses: ./action-b
+      
     
         
         
