@@ -8,7 +8,7 @@
 #echo "HOME=/root" >> $GITHUB_ENV
 #echo HOME=/root | tee -a $GITHUB_ENV
 #usermod -d /root root
-#echo $HOME
+echo $HOME
 #mv /root/tilowiklund /github/home
 chown -R $(id -un):$(id -gn) ~
 
