@@ -21,13 +21,12 @@ pwd
 
 #cd /github/home/tilowiklund/pinot
 ls -l
+cd tilowiklund/pinot
 mkdir -p book
 #mdbook init .
 cd book
 mkdir -p src/contents
 
-echo "punktmannen"
-ls -l
 echo "exec pinot"
 stack exec pinot -- --from databricks --to mdbook  /github/workspace/ASSIGNMENT-1.dbc -o src/contents
 echo "."
