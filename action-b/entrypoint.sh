@@ -5,7 +5,6 @@
 cd /github/workspace/books
 mdbook init . -y
 mdbook build
-ls
+ls book
 pwd
-ls src
 
