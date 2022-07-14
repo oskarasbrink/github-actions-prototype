@@ -1,6 +1,9 @@
 #! /bin/sh
 
 
-ls -a
-pwd
-ls ~
+
+cd book
+mdbook init . -y
+mdbook build
+
+
