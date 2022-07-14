@@ -7,15 +7,15 @@ chown -R $(id -un):$(id -gn) ~
 #TAR_OPTIONS=--no-same-owner stack setup
 #stack build
 #/root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/683e847c51fc1564e1993dabfce286242d9677886df9885a79955a2d0adb37f8/8.8.4/bin
-mkdir -p src/book
+mkdir -p book
 #mdbook init .
+cd book
 mkdir src/contents
 echo "~"
 
 echo "punktmannen"
 ls -l
 echo "exec pinot"
-cd /root/tilowiklund/pinot
 stack exec pinot -- --from databricks --to mdbook  /github/workspace/ASSIGNMENT-1.dbc -o src/contents
 echo "."
 ls
