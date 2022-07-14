@@ -9,18 +9,18 @@
 #echo HOME=/root | tee -a $GITHUB_ENV
 #usermod -d /root root
 #echo $HOME
-mv /root/tilowiklund /github/home
+#mv /root/tilowiklund /github/home
 chown -R $(id -un):$(id -gn) ~
 
 #TAR_OPTIONS=--no-same-owner stack setup
 #stack build
 #/root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/683e847c51fc1564e1993dabfce286242d9677886df9885a79955a2d0adb37f8/8.8.4/bin
 ls
-cd /github/home
+#cd /github/home
 pwd
 
 #cd /github/home/tilowiklund/pinot
-ls -l
+#ls -l
 cd tilowiklund/pinot
 mkdir -p book
 #mdbook init .
