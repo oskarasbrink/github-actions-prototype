@@ -8,8 +8,8 @@
 
 #usermod -d /root root
 echo $HOME
-mv /root/tilowiklund /github/home
-mv /root/.stack /github/home
+cp /root/tilowiklund /github/home
+cp /root/.stack /github/home
 chown -R $(id -un):$(id -gn) ~
 
 #TAR_OPTIONS=--no-same-owner stack setup
