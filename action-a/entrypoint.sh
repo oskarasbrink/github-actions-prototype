@@ -10,8 +10,6 @@ chown -R $(id -un):$(id -gn) ~
 mkdir -p src/book
 #mdbook init .
 mkdir src/contents
-
-exec bash
 echo "~"
 
 echo "punktmannen"
