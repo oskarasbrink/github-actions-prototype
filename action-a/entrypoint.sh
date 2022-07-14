@@ -35,7 +35,9 @@ echo $HOME
 echo "cd-mannen"
 cd /root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/683e847c51fc1564e1993dabfce286242d9677886df9885a79955a2d0adb37f8/8.8.4/bin
 echo "ls-mannen"
-ls -a /root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/
+ls -a /root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/25209f23054efc632f8f95d62490b13ea73df48993cc9cd44b2ce1348aa04b70
+ls -a /root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/25209f23054efc632f8f95d62490b13ea73df48993cc9cd44b2ce1348aa04b70/8.8.4
+ls -a /root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/25209f23054efc632f8f95d62490b13ea73df48993cc9cd44b2ce1348aa04b70/8.8.4/bin
 echo "ls-mannen två"
 ls -a /root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/683e847c51fc1564e1993dabfce286242d9677886df9885a79955a2d0adb37f8/8.8.4/bin 
 
