@@ -7,10 +7,9 @@ cd /root/tilowiklund/pinot
 #TAR_OPTIONS=--no-same-owner stack setup
 #stack build
 mkdir -p src/book
-mdbook init .
+#mdbook init .
 mkdir src/contents
 
-exec bash
 ls
 stack exec pinot -- --from databricks --to mdbook  ~/ASSIGNMENT-1.dbc -o src/contents
 ls
@@ -20,7 +19,7 @@ ls src/contents
 cd src 
 find contents -iname '*.md' -type f | sort -h | while read f; do echo "- ["$(basename $f .md)"](./$f)"; done > SUMMARY.md
 cd ..
-mdbook build
+#mdbook build
 ls -l
 
 
