@@ -6,7 +6,7 @@ echo $HOME
 echo "home change"
 #sh -c "echo HOME=/root >> $GITHUB_ENV"
 #echo HOME=/root >> $GITHUB_ENV
-echo HOME=/root | sudo tee -a $GITHUB_ENV'
+echo HOME=/root | tee -a $GITHUB_ENV'
 #usermod -d /root root
 echo $HOME
 cd /root/tilowiklund/pinot
