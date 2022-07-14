@@ -1,36 +1,36 @@
 #!/bin/sh
 
 #ls /root/tilowiklund
-#echo "hoem"
-#echo $HOME
-#echo "home change"
+
 #sh -c "echo HOME=/root >> $GITHUB_ENV"
 #echo "HOME=/root" >> $GITHUB_ENV
 #echo HOME=/root | tee -a $GITHUB_ENV
+
 #usermod -d /root root
 echo $HOME
-#mv /root/tilowiklund /github/home
+mv /root/tilowiklund /github/home
+mv /root/.stack /github/home
 chown -R $(id -un):$(id -gn) ~
 
 #TAR_OPTIONS=--no-same-owner stack setup
 #stack build
 #/root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/683e847c51fc1564e1993dabfce286242d9677886df9885a79955a2d0adb37f8/8.8.4/bin
 ls
-#cd /github/home
+
 pwd
 
-#cd /github/home/tilowiklund/pinot
-#ls -l
-cd /root/tilowiklund/pinot
+cd /github/home/tilowiklund/pinot
+ls -l
+#cd /root/tilowiklund/pinot
 mkdir -p book
 #mdbook init .
 cd book
 mkdir -p src/contents
 printenv PATH
-PATH = /root/.cabal/bin:/root/.local/bin:/opt/ghc/9.2.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+#PATH = /root/.cabal/bin:/root/.local/bin:/opt/ghc/9.2.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 echo "exec pinot"
 stack exec pinot -- --from databricks --to mdbook  /github/workspace/ASSIGNMENT-1.dbc -o src/contents
-PATH=/github/home/.stack/snapshots/x86_64-linux-tinfo6/683e847c51fc1564e1993dabfce286242d9677886df9885a79955a2d0adb37f8/8.8.4/bin:/github/home/.stack/compiler-tools/x86_64-linux-tinfo6/ghc-8.8.4/bin","/github/home/.stack/programs/x86_64-linux/ghc-tinfo6-8.8.4/bin:/root/.cabal/bin:/root/.local/bin:/opt/ghc/9.2.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+#PATH=/github/home/.stack/snapshots/x86_64-linux-tinfo6/683e847c51fc1564e1993dabfce286242d9677886df9885a79955a2d0adb37f8/8.8.4/bin:/github/home/.stack/compiler-tools/x86_64-linux-tinfo6/ghc-8.8.4/bin","/github/home/.stack/programs/x86_64-linux/ghc-tinfo6-8.8.4/bin:/root/.cabal/bin:/root/.local/bin:/opt/ghc/9.2.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 stack exec pinot -- --from databricks --to mdbook  /github/workspace/ASSIGNMENT-1.dbc -o src/contents
 echo "."
 ls
