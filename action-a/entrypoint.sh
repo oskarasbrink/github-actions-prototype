@@ -28,6 +28,7 @@ cd book
 mkdir -p src/contents
 ln -s /github/home /root
 printenv PATH
+echo $HOME
 export PATH=$PATH:/root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/683e847c51fc1564e1993dabfce286242d9677886df9885a79955a2d0adb37f8/8.8.4/bin
 #PATH = /root/.cabal/bin:/root/.local/bin:/opt/ghc/9.2.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 echo "exec pinot"
