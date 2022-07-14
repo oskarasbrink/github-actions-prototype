@@ -5,13 +5,10 @@ jobs:
     name: Hello world action
     runs-on: ubuntu-latest
     steps:
-      - run: echo "HOME=/root" >> $GITHUB_ENV
       - uses: actions/checkout@v1
       - run: echo "HOME=/root" >> $GITHUB_ENV
       - run: echo $HOME
       - run: 'sudo sh -c "echo HOME=/root >> $GITHUB_ENV"'
-      - run: echo $HOME
-      - run: sudo sh -c "echo HOME=/home/sf >> $GITHUB_ENV"
       - run: echo $HOME
       - uses: ./action-a
       - run: echo "HOME=/root" >> $GITHUB_ENV
