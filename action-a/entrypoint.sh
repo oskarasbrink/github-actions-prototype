@@ -29,6 +29,7 @@ mkdir -p src/contents
 
 echo "exec pinot"
 stack exec pinot -- --from databricks --to mdbook  /github/workspace/ASSIGNMENT-1.dbc -o src/contents
+printenv PATH
 echo "."
 ls
 echo "src"
