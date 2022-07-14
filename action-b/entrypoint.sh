@@ -2,7 +2,7 @@
 
 
 
-cd book
+cd /github/workspace/books
 mdbook init . -y
 mdbook build
 
