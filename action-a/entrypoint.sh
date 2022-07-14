@@ -21,7 +21,7 @@ pwd
 
 #cd /github/home/tilowiklund/pinot
 #ls -l
-cd tilowiklund/pinot
+cd /root/tilowiklund/pinot
 mkdir -p book
 #mdbook init .
 cd book
