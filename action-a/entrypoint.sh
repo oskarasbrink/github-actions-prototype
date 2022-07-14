@@ -6,8 +6,8 @@ echo $HOME
 echo "user"
 echo $USER
 echo "home change"
-usermod -d /root $USER
-echo $HOME
+#usermod -d /root root
+#echo $HOME
 cd /root/tilowiklund/pinot
 chown -R $(id -un):$(id -gn) ~
 
