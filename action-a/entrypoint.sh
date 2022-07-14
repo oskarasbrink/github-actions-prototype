@@ -23,7 +23,7 @@ mkdir books
 cd books
 mkdir src/contents
 
-stack exec pinot -- --from databricks --to mdbook  /github/workspace/ASSIGNMENT-1.dbc -o ~
+stack exec pinot -- --from databricks --to mdbook  /github/workspace/ASSIGNMENT-1.dbc -o src/contents
 
 
 cd src 
