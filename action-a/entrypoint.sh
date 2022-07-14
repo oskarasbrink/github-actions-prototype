@@ -20,6 +20,8 @@ ls
 pwd
 echo "whereis mannen"
 whereis pinot
+echo "which mannen"
+which pinot
 cd /root/tilowiklund/pinot
 ls -l
 #cd /root/tilowiklund/pinot
