@@ -3,12 +3,11 @@
 #ls /root/tilowiklund
 echo "hoem"
 echo $HOME
-echo "user"
-echo $USER
 echo "home change"
 sh -c "echo HOME=/root >> $GITHUB_ENV"
+echo HOME=/root >> $GITHUB_ENV
 #usermod -d /root root
-#echo $HOME
+echo $HOME
 cd /root/tilowiklund/pinot
 chown -R $(id -un):$(id -gn) ~
 
@@ -19,7 +18,6 @@ mkdir -p book
 #mdbook init .
 cd book
 mkdir -p src/contents
-echo "~"
 
 echo "punktmannen"
 ls -l
