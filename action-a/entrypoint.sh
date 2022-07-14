@@ -19,7 +19,7 @@ ls
 
 pwd
 
-cd tilowiklund/pinot
+cd /root/tilowiklund/pinot
 ls -l
 #cd /root/tilowiklund/pinot
 mkdir -p book
