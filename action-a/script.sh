@@ -4,7 +4,8 @@
 for FILE in /github/workspace/dbcArchives/*; do
     cd /github/workspace
     echo $FILE; 
-    mkdir "book-$FILE"/src/contents
+    #mkdir "book-$FILE"/src/contents
+    mkdir "$(basename "$FILE" .dbc)"/src/contents
     cd "book-$FILE"
     stack exec pinot -- --from databricks --to mdbook  /github/workspace/dbcArcives/"$FILE" -o src/contents
     cd src

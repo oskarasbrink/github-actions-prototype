@@ -18,14 +18,15 @@ chown -R $(id -un):$(id -gn) ~
 
 
 export PATH=$PATH:/root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/25209f23054efc632f8f95d62490b13ea73df48993cc9cd44b2ce1348aa04b70/8.8.4/bin
-cd /github/workspace
-mkdir books
-cd books
-mkdir src/contents
+#cd /github/workspace
+#mkdir books
+#cd books
+#mkdir src/contents
+./github/workspace/aciton-a/script.sh
+#stack exec pinot -- --from databricks --to mdbook  /github/workspace/ASSIGNMENT-1.dbc -o src/contents
 
-stack exec pinot -- --from databricks --to mdbook  /github/workspace/ASSIGNMENT-1.dbc -o src/contents
 
+#cd src
+#find contents -iname '*.md' -type f | sort -h | while read f; do echo "- ["$(basename $f .md)"](./$f)"; done > SUMMARY.md
+#cd ..
 
-cd src 
-find contents -iname '*.md' -type f | sort -h | while read f; do echo "- ["$(basename $f .md)"](./$f)"; done > SUMMARY.md
-cd ..
