@@ -3,6 +3,6 @@
 
 for FILE in /github/workspace/booksmannen/*; do
     cd $FILE
-    mdbook init .
+    mdbook init . -y
     mdbook build
 done
