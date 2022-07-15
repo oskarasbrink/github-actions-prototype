@@ -32,4 +32,4 @@ sh script.sh
 #cd ..
 
 ls /github/workspace
-ls /github/workspace/books
+ls /github/workspace/booksmannen
