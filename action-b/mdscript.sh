@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-for FILE in /github/workspace/books/*; do
+for FILE in /github/workspace/booksmannen/*; do
     cd $FILE
     mdbook init .
     mdbook build
