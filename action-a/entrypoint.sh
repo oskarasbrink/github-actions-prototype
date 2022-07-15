@@ -22,8 +22,8 @@ export PATH=$PATH:/root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo
 #mkdir books
 #cd books
 #mkdir src/contents
-#ls /githuc/workspace/action-a
-./github/workspace/action-a/script.sh
+cd /github/workspace/action-a 
+./script.sh
 #stack exec pinot -- --from databricks --to mdbook  /github/workspace/ASSIGNMENT-1.dbc -o src/contents
 
 
