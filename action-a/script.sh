@@ -1,8 +1,8 @@
 #!/bin/sh
 
-
+mkdir -p /github/workspace/booksmannen
 for FILE in /github/workspace/dbcArchives/*; do
-    cd /github/workspace
+    cd /github/workspace/booksmannen
     echo $FILE; 
     mkdir -p "$(basename "$FILE" .dbc)"/src/contents
     cd "$(basename "$FILE" .dbc)"

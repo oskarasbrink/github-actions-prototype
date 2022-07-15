@@ -1,5 +1,5 @@
 #!/bin/sh
-
+apt install tree
 #ls /root/tilowiklund
 
 #sh -c "echo HOME=/root >> $GITHUB_ENV"
@@ -32,3 +32,5 @@ sh script.sh
 #find contents -iname '*.md' -type f | sort -h | while read f; do echo "- ["$(basename $f .md)"](./$f)"; done > SUMMARY.md
 #cd ..
 
+ls /github/workspace
+tree .
