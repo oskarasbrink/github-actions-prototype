@@ -1,5 +1,4 @@
 #!/bin/sh
-apt install tree
 #ls /root/tilowiklund
 
 #sh -c "echo HOME=/root >> $GITHUB_ENV"
@@ -33,4 +32,4 @@ sh script.sh
 #cd ..
 
 ls /github/workspace
-tree .
+ls /github/workspace/books
