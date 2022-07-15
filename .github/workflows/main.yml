@@ -8,6 +8,15 @@ jobs:
       run:
         shell: bash
     steps:
+      - run: echo "HOME=/root" >> $GITHUB_ENV
       - uses: actions/checkout@v1
       - run: echo "HOME=/root" >> $GITHUB_ENV
       - uses: ./action-a
+      - uses: ./action-b
+      
+    
+        
+        
+
+  
+    

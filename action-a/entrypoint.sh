@@ -1,48 +1,31 @@
 #!/bin/sh
 
 #ls /root/tilowiklund
-#echo "hoem"
-#echo $HOME
-#echo "home change"
+
 #sh -c "echo HOME=/root >> $GITHUB_ENV"
 #echo "HOME=/root" >> $GITHUB_ENV
 #echo HOME=/root | tee -a $GITHUB_ENV
+
 #usermod -d /root root
 echo $HOME
-#mv /root/tilowiklund /github/home
+#cp /root/tilowiklund /github/home
+#cp /root/.stack /github/home
 chown -R $(id -un):$(id -gn) ~
 
 #TAR_OPTIONS=--no-same-owner stack setup
 #stack build
 #/root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/683e847c51fc1564e1993dabfce286242d9677886df9885a79955a2d0adb37f8/8.8.4/bin
-ls
-#cd /github/home
-pwd
 
-#cd /github/home/tilowiklund/pinot
-#ls -l
-cd /root/tilowiklund/pinot
-mkdir -p book
-#mdbook init .
-cd book
-mkdir -p src/contents
 
-echo "exec pinot"
+export PATH=$PATH:/root/tilowiklund/pinot/.stack-work/install/x86_64-linux-tinfo6/25209f23054efc632f8f95d62490b13ea73df48993cc9cd44b2ce1348aa04b70/8.8.4/bin
+cd /github/workspace
+mkdir books
+cd books
+mkdir src/contents
+
 stack exec pinot -- --from databricks --to mdbook  /github/workspace/ASSIGNMENT-1.dbc -o src/contents
-echo "."
-ls
-echo "src"
-ls src
-echo "src/contents"
-ls src/contents
+
 
 cd src 
 find contents -iname '*.md' -type f | sort -h | while read f; do echo "- ["$(basename $f .md)"](./$f)"; done > SUMMARY.md
 cd ..
-echo "book"
-ls book
-#mdbook build
-echo "ls -l"
-ls -l
-
-
