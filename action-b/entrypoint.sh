@@ -10,3 +10,6 @@
 chmod a+x /github/workspace/action-b/mdscript.sh
 cd /github/workspace/action-b 
 sh mdscript.sh
+
+ls -l
+
